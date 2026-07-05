@@ -1,37 +1,28 @@
+<details>
+<summary><strong>History-Aware Query Reformulation</strong></summary>
 
-<details><summary>
-  History-Aware Query Reformulation
-
-
-</summary>
-
+```python
 contextualize_q_system_prompt = (
-            "Given a chat history and the latest user question "
-            "which might reference context in the chat history, "
-            "formulate a standalone question that can be understood "
-            "without the chat history. "
-            "Do NOT answer the question, only rewrite it if necessary."
-        )
-        
-        </details>
+    "Given a chat history and the latest user question "
+    "which might reference context in the chat history, "
+    "formulate a standalone question that can be understood "
+    "without the chat history. "
+    "Do NOT answer the question, only rewrite it if necessary."
+)
+```
 
-
-
-
-<details><summary>
-  question - answer prompt
-</summary>
-
-    qa_system_prompt = (
-            "You are a helpful AI assistant.\n\n"
-            "Use the following retrieved context to answer the user's question.\n"
-            "If you don't know the answer, simply say you don't know.\n\n"
-            "Context:\n{context}"
-        )
 </details>
 
-    
+<details>
+<summary><strong>Question-Answer Prompt</strong></summary>
 
-<!-- <details><summary>
-  
-</summary></details> -->
+```python
+qa_system_prompt = (
+    "You are a helpful AI assistant.\n\n"
+    "Use the following retrieved context to answer the user's question.\n"
+    "If you don't know the answer, simply say you don't know.\n\n"
+    "Context:\n{context}"
+)
+```
+
+</details>
