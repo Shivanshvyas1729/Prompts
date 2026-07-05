@@ -1,8 +1,4 @@
 
-<!-- <details><summary>
-  
-</summary></details> -->
-
 <details><summary>
   History-Aware Query Reformulation
 
@@ -35,3 +31,7 @@ contextualize_q_system_prompt = (
 </details>
 
     
+
+<!-- <details><summary>
+  
+</summary></details> -->
