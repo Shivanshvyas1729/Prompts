@@ -1,3 +1,8 @@
+
+<!-- <details><summary>
+  
+</summary></details> -->
+
 <details><summary>
   History-Aware Query Reformulation
 
@@ -13,3 +18,20 @@ contextualize_q_system_prompt = (
         )
         
         </details>
+
+
+
+
+<details><summary>
+  question - answer prompt
+</summary>
+
+    qa_system_prompt = (
+            "You are a helpful AI assistant.\n\n"
+            "Use the following retrieved context to answer the user's question.\n"
+            "If you don't know the answer, simply say you don't know.\n\n"
+            "Context:\n{context}"
+        )
+</details>
+
+    
